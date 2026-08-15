@@ -1,0 +1,1455 @@
+{
+  "query": "Loveland under $700K, 3+ bed, pool or hot tub, new roof",
+  "total": 344,
+  "summary": "Found 344 listings matching Loveland, 3+ bed, Under $700K, Hot tub, New roof, Pool.",
+  "chips": [
+    {
+      "key": "cities",
+      "label": "Loveland"
+    },
+    {
+      "key": "minBeds",
+      "label": "3+ bed"
+    },
+    {
+      "key": "maxPrice",
+      "label": "Under $700K"
+    },
+    {
+      "key": "gem:hot_tub_included",
+      "label": "Hot tub",
+      "gem": true
+    },
+    {
+      "key": "gem:new_roof",
+      "label": "New roof",
+      "gem": true
+    },
+    {
+      "key": "gem:pool",
+      "label": "Pool",
+      "gem": true
+    }
+  ],
+  "searchParams": {
+    "cities": [
+      "Loveland"
+    ],
+    "maxPrice": 700000,
+    "minBeds": 3,
+    "reqFinishedBasement": false,
+    "reqRvParking": false,
+    "reqShopOutbuilding": false,
+    "reqWellSeptic": false,
+    "propCategory": "residential",
+    "queryGems": [
+      "hot_tub_included",
+      "new_roof",
+      "pool"
+    ]
+  },
+  "listings": [
+    {
+      "ListingKey": "IRE1367054",
+      "ListPrice": 690000,
+      "UnparsedAddress": "4204 Martinson",
+      "City": "Loveland",
+      "PostalCode": "80537",
+      "BedroomsTotal": 5,
+      "BathroomsTotalInteger": 4,
+      "LivingArea": 3354,
+      "LotSizeAcres": 0.11,
+      "GarageSpaces": 2,
+      "StandardStatus": "Active",
+      "PhotosCount": 50,
+      "Media": [
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/1.jpg",
+          "Order": 1
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/2.jpg",
+          "Order": 2
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/3.jpg",
+          "Order": 3
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/4.jpg",
+          "Order": 4
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/5.jpg",
+          "Order": 5
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/6.jpg",
+          "Order": 6
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/7.jpg",
+          "Order": 7
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/8.jpg",
+          "Order": 8
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/9.jpg",
+          "Order": 9
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/10.jpg",
+          "Order": 10
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/11.jpg",
+          "Order": 11
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/12.jpg",
+          "Order": 12
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/13.jpg",
+          "Order": 13
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/14.jpg",
+          "Order": 14
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/15.jpg",
+          "Order": 15
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/16.jpg",
+          "Order": 16
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/17.jpg",
+          "Order": 17
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/18.jpg",
+          "Order": 18
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/19.jpg",
+          "Order": 19
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/20.jpg",
+          "Order": 20
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/21.jpg",
+          "Order": 21
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/22.jpg",
+          "Order": 22
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/23.jpg",
+          "Order": 23
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/24.jpg",
+          "Order": 24
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/25.jpg",
+          "Order": 25
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/26.jpg",
+          "Order": 26
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/27.jpg",
+          "Order": 27
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/28.jpg",
+          "Order": 28
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/29.jpg",
+          "Order": 29
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/30.jpg",
+          "Order": 30
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/31.jpg",
+          "Order": 31
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/32.jpg",
+          "Order": 32
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/33.jpg",
+          "Order": 33
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/34.jpg",
+          "Order": 34
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/35.jpg",
+          "Order": 35
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/36.jpg",
+          "Order": 36
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/37.jpg",
+          "Order": 37
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/38.jpg",
+          "Order": 38
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/39.jpg",
+          "Order": 39
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/40.jpg",
+          "Order": 40
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/41.jpg",
+          "Order": 41
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/42.jpg",
+          "Order": 42
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/43.jpg",
+          "Order": 43
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/44.jpg",
+          "Order": 44
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/45.jpg",
+          "Order": 45
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/46.jpg",
+          "Order": 46
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/47.jpg",
+          "Order": 47
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/48.jpg",
+          "Order": 48
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/49.jpg",
+          "Order": 49
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1367054/50.jpg",
+          "Order": 50
+        }
+      ],
+      "Latitude": 40.392094,
+      "Longitude": -105.135594,
+      "Gems": {
+        "new_roof": {
+          "evidence": "the roof is outfitted with premium Class 4 shingles",
+          "polarity": "asserted",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "ListingKey": "IRE1345908",
+      "ListPrice": 629395,
+      "UnparsedAddress": "1658 Taft Gardens",
+      "City": "Loveland",
+      "PostalCode": "80537",
+      "BedroomsTotal": 3,
+      "BathroomsTotalInteger": 3,
+      "LivingArea": 2024,
+      "LotSizeAcres": 0.12,
+      "GarageSpaces": 2,
+      "StandardStatus": "Active",
+      "PhotosCount": 40,
+      "Media": [
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/1.jpg",
+          "Order": 1
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/2.jpg",
+          "Order": 2
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/3.jpg",
+          "Order": 3
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/4.jpg",
+          "Order": 4
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/5.jpg",
+          "Order": 5
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/6.jpg",
+          "Order": 6
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/7.jpg",
+          "Order": 7
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/8.jpg",
+          "Order": 8
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/9.jpg",
+          "Order": 9
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/10.jpg",
+          "Order": 10
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/11.jpg",
+          "Order": 11
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/12.jpg",
+          "Order": 12
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/13.jpg",
+          "Order": 13
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/14.jpg",
+          "Order": 14
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/15.jpg",
+          "Order": 15
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/16.jpg",
+          "Order": 16
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/17.jpg",
+          "Order": 17
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/18.jpg",
+          "Order": 18
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/19.jpg",
+          "Order": 19
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/20.jpg",
+          "Order": 20
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/21.jpg",
+          "Order": 21
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/22.jpg",
+          "Order": 22
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/23.jpg",
+          "Order": 23
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/24.jpg",
+          "Order": 24
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/25.jpg",
+          "Order": 25
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/26.jpg",
+          "Order": 26
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/27.jpg",
+          "Order": 27
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/28.jpg",
+          "Order": 28
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/29.jpg",
+          "Order": 29
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/30.jpg",
+          "Order": 30
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/31.jpg",
+          "Order": 31
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/32.jpg",
+          "Order": 32
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/33.jpg",
+          "Order": 33
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/34.jpg",
+          "Order": 34
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/35.jpg",
+          "Order": 35
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/36.jpg",
+          "Order": 36
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/37.jpg",
+          "Order": 37
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/38.jpg",
+          "Order": 38
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/39.jpg",
+          "Order": 39
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1345908/40.jpg",
+          "Order": 40
+        }
+      ],
+      "Latitude": 40.401574,
+      "Longitude": -105.099081,
+      "Gems": {
+        "mother_in_law_suite": {
+          "evidence": "Builder will build ADU's onto the homes",
+          "polarity": "potential",
+          "confidence": 0.8
+        },
+        "no_exterior_maintenance": {
+          "evidence": "HOA fee includes snow removal, making this a great option for many!",
+          "polarity": "potential",
+          "confidence": 0.75
+        }
+      }
+    },
+    {
+      "ListingKey": "IRE1349169",
+      "ListPrice": 628900,
+      "UnparsedAddress": "1667 Taft Gardens",
+      "City": "Loveland",
+      "PostalCode": "80537",
+      "BedroomsTotal": 3,
+      "BathroomsTotalInteger": 3,
+      "LivingArea": 1753,
+      "LotSizeAcres": 0.19,
+      "GarageSpaces": 2,
+      "StandardStatus": "Active",
+      "PhotosCount": 50,
+      "Media": [
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/1.jpg",
+          "Order": 1
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/2.jpg",
+          "Order": 2
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/3.jpg",
+          "Order": 3
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/4.jpg",
+          "Order": 4
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/5.jpg",
+          "Order": 5
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/6.jpg",
+          "Order": 6
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/7.jpg",
+          "Order": 7
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/8.jpg",
+          "Order": 8
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/9.jpg",
+          "Order": 9
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/10.jpg",
+          "Order": 10
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/11.jpg",
+          "Order": 11
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/12.jpg",
+          "Order": 12
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/13.jpg",
+          "Order": 13
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/14.jpg",
+          "Order": 14
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/15.jpg",
+          "Order": 15
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/16.jpg",
+          "Order": 16
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/17.jpg",
+          "Order": 17
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/18.jpg",
+          "Order": 18
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/19.jpg",
+          "Order": 19
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/20.jpg",
+          "Order": 20
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/21.jpg",
+          "Order": 21
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/22.jpg",
+          "Order": 22
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/23.jpg",
+          "Order": 23
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/24.jpg",
+          "Order": 24
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/25.jpg",
+          "Order": 25
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/26.jpg",
+          "Order": 26
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/27.jpg",
+          "Order": 27
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/28.jpg",
+          "Order": 28
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/29.jpg",
+          "Order": 29
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/30.jpg",
+          "Order": 30
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/31.jpg",
+          "Order": 31
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/32.jpg",
+          "Order": 32
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/33.jpg",
+          "Order": 33
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/34.jpg",
+          "Order": 34
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/35.jpg",
+          "Order": 35
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/36.jpg",
+          "Order": 36
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/37.jpg",
+          "Order": 37
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/38.jpg",
+          "Order": 38
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/39.jpg",
+          "Order": 39
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/40.jpg",
+          "Order": 40
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/41.jpg",
+          "Order": 41
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/42.jpg",
+          "Order": 42
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/43.jpg",
+          "Order": 43
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/44.jpg",
+          "Order": 44
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/45.jpg",
+          "Order": 45
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/46.jpg",
+          "Order": 46
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/47.jpg",
+          "Order": 47
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/48.jpg",
+          "Order": 48
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/49.jpg",
+          "Order": 49
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1349169/50.jpg",
+          "Order": 50
+        }
+      ],
+      "Latitude": 40.40166,
+      "Longitude": -105.098501,
+      "Gems": {
+        "mother_in_law_suite": {
+          "evidence": "ADUs can even be added!",
+          "polarity": "potential",
+          "confidence": 0.8
+        }
+      }
+    },
+    {
+      "ListingKey": "IRE1370762",
+      "ListPrice": 524900,
+      "UnparsedAddress": "1142 Edinburgh",
+      "City": "Loveland",
+      "PostalCode": "80537",
+      "BedroomsTotal": 5,
+      "BathroomsTotalInteger": 3,
+      "LivingArea": 1786,
+      "LotSizeAcres": 0.2,
+      "GarageSpaces": 2,
+      "StandardStatus": "Active",
+      "PhotosCount": 50,
+      "Media": [
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/1.jpg",
+          "Order": 1
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/2.jpg",
+          "Order": 2
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/3.jpg",
+          "Order": 3
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/4.jpg",
+          "Order": 4
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/5.jpg",
+          "Order": 5
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/6.jpg",
+          "Order": 6
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/7.jpg",
+          "Order": 7
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/8.jpg",
+          "Order": 8
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/9.jpg",
+          "Order": 9
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/10.jpg",
+          "Order": 10
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/11.jpg",
+          "Order": 11
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/12.jpg",
+          "Order": 12
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/13.jpg",
+          "Order": 13
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/14.jpg",
+          "Order": 14
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/15.jpg",
+          "Order": 15
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/16.jpg",
+          "Order": 16
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/17.jpg",
+          "Order": 17
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/18.jpg",
+          "Order": 18
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/19.jpg",
+          "Order": 19
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/20.jpg",
+          "Order": 20
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/21.jpg",
+          "Order": 21
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/22.jpg",
+          "Order": 22
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/23.jpg",
+          "Order": 23
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/24.jpg",
+          "Order": 24
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/25.jpg",
+          "Order": 25
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/26.jpg",
+          "Order": 26
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/27.jpg",
+          "Order": 27
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/28.jpg",
+          "Order": 28
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/29.jpg",
+          "Order": 29
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/30.jpg",
+          "Order": 30
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/31.jpg",
+          "Order": 31
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/32.jpg",
+          "Order": 32
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/33.jpg",
+          "Order": 33
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/34.jpg",
+          "Order": 34
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/35.jpg",
+          "Order": 35
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/36.jpg",
+          "Order": 36
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/37.jpg",
+          "Order": 37
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/38.jpg",
+          "Order": 38
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/39.jpg",
+          "Order": 39
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/40.jpg",
+          "Order": 40
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/41.jpg",
+          "Order": 41
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/42.jpg",
+          "Order": 42
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/43.jpg",
+          "Order": 43
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/44.jpg",
+          "Order": 44
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/45.jpg",
+          "Order": 45
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/46.jpg",
+          "Order": 46
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/47.jpg",
+          "Order": 47
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/48.jpg",
+          "Order": 48
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/49.jpg",
+          "Order": 49
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1370762/50.jpg",
+          "Order": 50
+        }
+      ],
+      "Latitude": 40.380397,
+      "Longitude": -105.11193
+    },
+    {
+      "ListingKey": "IRE1369369",
+      "ListPrice": 640000,
+      "UnparsedAddress": "1246 4th",
+      "City": "Loveland",
+      "PostalCode": "80537",
+      "BedroomsTotal": 4,
+      "BathroomsTotalInteger": 2,
+      "LivingArea": 1728,
+      "LotSizeAcres": 0.26,
+      "GarageSpaces": 0,
+      "StandardStatus": "Active",
+      "PhotosCount": 41,
+      "Media": [
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/1.jpg",
+          "Order": 1
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/2.jpg",
+          "Order": 2
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/3.jpg",
+          "Order": 3
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/4.jpg",
+          "Order": 4
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/5.jpg",
+          "Order": 5
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/6.jpg",
+          "Order": 6
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/7.jpg",
+          "Order": 7
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/8.jpg",
+          "Order": 8
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/9.jpg",
+          "Order": 9
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/10.jpg",
+          "Order": 10
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/11.jpg",
+          "Order": 11
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/12.jpg",
+          "Order": 12
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/13.jpg",
+          "Order": 13
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/14.jpg",
+          "Order": 14
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/15.jpg",
+          "Order": 15
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/16.jpg",
+          "Order": 16
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/17.jpg",
+          "Order": 17
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/18.jpg",
+          "Order": 18
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/19.jpg",
+          "Order": 19
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/20.jpg",
+          "Order": 20
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/21.jpg",
+          "Order": 21
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/22.jpg",
+          "Order": 22
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/23.jpg",
+          "Order": 23
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/24.jpg",
+          "Order": 24
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/25.jpg",
+          "Order": 25
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/26.jpg",
+          "Order": 26
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/27.jpg",
+          "Order": 27
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/28.jpg",
+          "Order": 28
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/29.jpg",
+          "Order": 29
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/30.jpg",
+          "Order": 30
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/31.jpg",
+          "Order": 31
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/32.jpg",
+          "Order": 32
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/33.jpg",
+          "Order": 33
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/34.jpg",
+          "Order": 34
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/35.jpg",
+          "Order": 35
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/36.jpg",
+          "Order": 36
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/37.jpg",
+          "Order": 37
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/38.jpg",
+          "Order": 38
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/39.jpg",
+          "Order": 39
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/40.jpg",
+          "Order": 40
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE1369369/41.jpg",
+          "Order": 41
+        }
+      ],
+      "Latitude": 40.395296,
+      "Longitude": -105.059975,
+      "Gems": {
+        "solar": {
+          "evidence": "solar and wired exterior lighting",
+          "polarity": "asserted",
+          "confidence": 0.7
+        },
+        "new_roof": {
+          "evidence": "roof approx. 4 years old",
+          "polarity": "asserted",
+          "confidence": 0.8
+        },
+        "hot_tub_included": {
+          "evidence": "dedicated hot tub building with high end hot tub, tv, stereo and speakers",
+          "polarity": "asserted",
+          "confidence": 0.9
+        },
+        "mother_in_law_suite": {
+          "evidence": "finished loft area with a potential to convert to an ADU",
+          "polarity": "potential",
+          "confidence": 0.8
+        }
+      }
+    },
+    {
+      "ListingKey": "IRE402027700",
+      "ListPrice": 564000,
+      "UnparsedAddress": "3696 Downieville",
+      "City": "Loveland",
+      "PostalCode": "80538",
+      "BedroomsTotal": 5,
+      "BathroomsTotalInteger": 3,
+      "LivingArea": 2854,
+      "LotSizeAcres": 0.17,
+      "GarageSpaces": 3,
+      "StandardStatus": "Active",
+      "PhotosCount": 75,
+      "Media": [
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/1.jpg",
+          "Order": 1
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/1.jpg",
+          "Order": 2
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/2.jpg",
+          "Order": 3
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/2.jpg",
+          "Order": 4
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/3.jpg",
+          "Order": 5
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/3.jpg",
+          "Order": 6
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/4.jpg",
+          "Order": 7
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/4.jpg",
+          "Order": 8
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/5.jpg",
+          "Order": 9
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/5.jpg",
+          "Order": 10
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/6.jpg",
+          "Order": 11
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/6.jpg",
+          "Order": 12
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/7.jpg",
+          "Order": 13
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/7.jpg",
+          "Order": 14
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/8.jpg",
+          "Order": 15
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/8.jpg",
+          "Order": 16
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/9.jpg",
+          "Order": 17
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/9.jpg",
+          "Order": 18
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/10.jpg",
+          "Order": 19
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/10.jpg",
+          "Order": 20
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/11.jpg",
+          "Order": 21
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/11.jpg",
+          "Order": 22
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/12.jpg",
+          "Order": 23
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/12.jpg",
+          "Order": 24
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/13.jpg",
+          "Order": 25
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/13.jpg",
+          "Order": 26
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/14.jpg",
+          "Order": 27
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/14.jpg",
+          "Order": 28
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/15.jpg",
+          "Order": 29
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/15.jpg",
+          "Order": 30
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/16.jpg",
+          "Order": 31
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/16.jpg",
+          "Order": 32
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/17.jpg",
+          "Order": 33
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/17.jpg",
+          "Order": 34
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/18.jpg",
+          "Order": 35
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/18.jpg",
+          "Order": 36
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/19.jpg",
+          "Order": 37
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/19.jpg",
+          "Order": 38
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/20.jpg",
+          "Order": 39
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/20.jpg",
+          "Order": 40
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/21.jpg",
+          "Order": 41
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/21.jpg",
+          "Order": 42
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/22.jpg",
+          "Order": 43
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/22.jpg",
+          "Order": 44
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/23.jpg",
+          "Order": 45
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/23.jpg",
+          "Order": 46
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/24.jpg",
+          "Order": 47
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/24.jpg",
+          "Order": 48
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/25.jpg",
+          "Order": 49
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/25.jpg",
+          "Order": 50
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/26.jpg",
+          "Order": 51
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/26.jpg",
+          "Order": 52
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/27.jpg",
+          "Order": 53
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/27.jpg",
+          "Order": 54
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/28.jpg",
+          "Order": 55
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/29.jpg",
+          "Order": 56
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/30.jpg",
+          "Order": 57
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/31.jpg",
+          "Order": 58
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/32.jpg",
+          "Order": 59
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/33.jpg",
+          "Order": 60
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/34.jpg",
+          "Order": 61
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/35.jpg",
+          "Order": 62
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/36.jpg",
+          "Order": 63
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/37.jpg",
+          "Order": 64
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/38.jpg",
+          "Order": 65
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/39.jpg",
+          "Order": 66
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/40.jpg",
+          "Order": 67
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/41.jpg",
+          "Order": 68
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/42.jpg",
+          "Order": 69
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/43.jpg",
+          "Order": 70
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/44.jpg",
+          "Order": 71
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/45.jpg",
+          "Order": 72
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/46.jpg",
+          "Order": 73
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/47.jpg",
+          "Order": 74
+        },
+        {
+          "MediaURL": "https://photos.970.re/IRE402027700/48.jpg",
+          "Order": 75
+        }
+      ],
+      "Latitude": 40.435696,
+      "Longitude": -105.127647,
+      "Gems": {
+        "new_roof": {
+          "evidence": "The roof is brand new with a transferable warranty",
+          "polarity": "asserted",
+          "confidence": 0.9
+        },
+        "hot_tub_included": {
+          "evidence": "a relaxing hot tub-perfect for entertaining or unwinding in privacy",
+          "polarity": "asserted",
+          "confidence": 0.85
+        },
+        "mother_in_law_suite": {
+          "evidence": "This flexible layout is ideal for guests, multi-generational living, or rental potential",
+          "polarity": "potential",
+          "confidence": 0.7
+        },
+        "no_exterior_maintenance": {
+          "evidence": "composite maintenance-free deck",
+          "polarity": "asserted",
+          "confidence": 0.8
+        }
+      }
+    }
+  ]
+}
