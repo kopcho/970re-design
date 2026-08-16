@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Refine · 970.re</title>
+<style>
+  :root {
+    --ink: #0F2C1C; --paper: #FAF9F5; --surface: #FFFFFF;
+    --forest: #1A4A32; --forest-2: #163A27; --forest-3: #1E4A32;
+    --gold: #C9A227; --gold-soft: #D8B84A;
+    --assert: #1B7A45; --assert-bg: #E6F4EC;
+    --mist: rgba(15,44,28,.56); --mist-2: rgba(15,44,28,.38);
+    --line: rgba(15,44,28,.10); --spark: #E85D04;
+    --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; }
+  body {
+    background: #0C1A12; font-family: var(--sans); color: var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100dvh; padding: 16px;
+  }
+  .device {
+    width: 100%; max-width: 400px; height: 100dvh; max-height: 860px;
+    background: var(--paper); border-radius: 34px; overflow: hidden;
+    position: relative; box-shadow: 0 40px 90px -30px rgba(0,0,0,.65);
+    display: flex; flex-direction: column;
+  }
+  @media (max-width: 440px) {
+    body { padding: 0; background: var(--paper); }
+    .device { border-radius: 0; max-height: none; height: 100dvh; box-shadow: none; }
+  }
+  .scroll { flex: 1; overflow-y: auto; scrollbar-width: none; }
+  .scroll::-webkit-scrollbar { display: none; }
+
+  /* Gauge */
+  .gauge { padding: 28px 24px 18px; text-align: center; background: linear-gradient(180deg, #163A27 0%, #0F2C1C 100%); color: #F3F1E9; }
+  .eyebrow { font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: rgba(243,241,233,.55); }
+  .count-wrap { position: relative; display: inline-block; margin: 6px 0 2px; }
+  .count { font-family: var(--serif); font-weight: 600; font-size: 72px; line-height: .92; letter-spacing: -.02em; font-variant-numeric: tabular-nums; transition: color .3s; }
+  .count.tighten { color: #8FE0A6; }
+  .count.loosen { color: #E0A24A; }
+  .count-label { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: rgba(243,241,233,.5); }
+  .lock {
+    display: inline-flex; align-items: center; gap: 7px; margin-top: 12px;
+    padding: 7px 13px; border-radius: 999px;
+    background: rgba(143,224,166,.12); border: 1px solid rgba(143,224,166,.28);
+    font-size: 11.5px; color: #A9DFB8;
+  }
+  .lock b { color: #C7ECD1; font-weight: 600; }
+  .delta {
+    position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center; gap: 8px; padding: 6px 13px; border-radius: 999px;
+    white-space: nowrap; font-family: var(--mono); font-size: 11px;
+    opacity: 0; pointer-events: none; background: #1E4A32; border: 1px solid rgba(243,241,233,.12);
+  }
+  .delta.show { animation: deltapop 1.9s cubic-bezier(.2,.8,.2,1) forwards; }
+  .delta .n { font-weight: 600; } .delta.down .n { color: #8FE0A6; } .delta.up .n { color: #E0A24A; }
+  @keyframes deltapop {
+    0% { opacity: 0; transform: translateX(-50%) translateY(2px) scale(.9); }
+    12% { opacity: 1; transform: translateX(-50%) translateY(-8px) scale(1); }
+    80% { opacity: 1; transform: translateX(-50%) translateY(-8px); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-16px); }
+  }
+
+  .body { padding: 20px 18px 100px; }
+  .sec-title { font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--mist-2); margin-bottom: 12px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 9px 12px; border-radius: 12px; font-size: 13.5px; font-weight: 500;
+    cursor: pointer; user-select: none; border: 1px solid var(--line);
+    background: var(--surface); color: var(--ink);
+    box-shadow: 0 1px 4px -1px rgba(15,44,28,.08);
+    transition: transform .12s, background .2s;
+  }
+  .chip:active { transform: scale(.95); }
+  .chip.gem-req {
+    background: linear-gradient(180deg, var(--gold-soft), var(--gold));
+    color: #2A2108; border-color: transparent;
+    box-shadow: 0 3px 10px -2px rgba(201,162,39,.4);
+  }
+  .chip.gem-nice {
+    background: transparent; color: var(--gold); border: 1px dashed rgba(201,162,39,.5);
+  }
+  .chip .mk { font-size: 12px; opacity: .9; }
+  .chip .x {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px; border-radius: 50%; margin-left: 2px;
+    font-size: 13px; opacity: .45;
+  }
+  .chip.enter { animation: chipin .42s cubic-bezier(.2,1.3,.4,1); }
+  @keyframes chipin { 0% { transform: scale(.6); opacity: 0; } 60% { transform: scale(1.08); } 100% { transform: scale(1); opacity: 1; } }
+
+  .add {
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 12px;
+    padding: 9px 14px; border-radius: 12px; cursor: pointer; font-size: 13px; font-weight: 600;
+    color: var(--spark); background: rgba(232,93,4,.08); border: 1px dashed rgba(232,93,4,.45);
+  }
+  .add:active { transform: scale(.95); }
+
+  .editor { overflow: hidden; max-height: 0; transition: max-height .34s cubic-bezier(.3,.8,.3,1); }
+  .editor.open { max-height: 160px; margin-top: 12px; }
+  .ed-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 15px 17px 18px; }
+  .ed-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 14px; }
+  .ed-val { font-family: var(--serif); font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .ed-cap { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--mist-2); }
+
+  .dual { position: relative; height: 26px; }
+  .dual .track { position: absolute; top: 11px; left: 0; right: 0; height: 4px; border-radius: 4px; background: rgba(15,44,28,.12); }
+  .dual .fill { position: absolute; top: 0; height: 100%; border-radius: 4px; background: var(--gold); }
+  .dual input[type=range] {
+    position: absolute; top: 2px; left: 0; width: 100%; height: 22px; margin: 0;
+    background: none; pointer-events: none; -webkit-appearance: none; appearance: none;
+  }
+  .dual input[type=range]::-webkit-slider-thumb {
+    pointer-events: auto; -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--surface); border: 3px solid var(--gold); cursor: grab;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  }
+  .dual input[type=range]:active::-webkit-slider-thumb { cursor: grabbing; transform: scale(1.12); }
+
+  .tray { overflow: hidden; max-height: 0; transition: max-height .34s; }
+  .tray.open { max-height: 280px; }
+  .tray-inner { display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 0 4px; }
+  .sug {
+    display: inline-flex; align-items: center; gap: 7px; padding: 9px 13px; border-radius: 12px;
+    cursor: pointer; font-size: 13px; font-weight: 500; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--line);
+  }
+  .sug:active { transform: scale(.94); }
+  .sug .plus { color: var(--spark); font-weight: 700; font-size: 15px; }
+  .sug .gm { color: var(--gold); font-size: 11px; }
+
+  .hint { text-align: center; font-size: 11px; color: var(--mist-2); padding: 14px 8px 0; font-family: var(--mono); }
+  .hint b { color: var(--gold); }
+
+  .preview {
+    margin-top: 20px; background: var(--surface); border: 1px solid var(--line);
+    border-radius: 16px; padding: 14px 14px 16px;
+  }
+  .prev-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .prev-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--assert); }
+  .prev-title { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--assert); font-weight: 600; }
+  .mini {
+    display: flex; gap: 12px; align-items: center; padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .mini:last-child { border-bottom: none; }
+  .mini-ph { width: 56px; height: 44px; border-radius: 8px; background: linear-gradient(135deg,#8FB49A,#4E7458); flex-shrink: 0; }
+  .mini-price { font-family: var(--serif); font-size: 16px; font-weight: 600; }
+  .mini-addr { font-size: 12px; color: var(--mist); }
+  .mini-ev { font-size: 11.5px; color: var(--assert); margin-top: 2px; }
+  .more { text-align: center; font-family: var(--mono); font-size: 11px; color: var(--mist-2); padding-top: 8px; }
+
+  .done-bar {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 12px 16px; padding-bottom: max(12px, env(safe-area-inset-bottom));
+    background: var(--surface); border-top: 1px solid var(--line);
+  }
+  .done-btn {
+    width: 100%; padding: 15px; border: none; border-radius: 14px;
+    background: var(--forest); color: #fff; font-size: 15px; font-weight: 600;
+    cursor: pointer;
+  }
+  .done-btn:active { transform: scale(.98); }
+</style>
+</head>
+<body>
+<div class="device">
+  <div class="scroll">
+    <div class="gauge">
+      <div class="eyebrow">Homes that match — strict</div>
+      <div class="count-wrap">
+        <div class="delta" id="delta"></div>
+        <div class="count" id="count">0</div>
+      </div>
+      <div class="count-label">for sale, right now</div>
+      <div class="lock" id="lock">
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6.2" width="8" height="6" rx="1.4"/><path d="M4.6 6.2V4.6a2.4 2.4 0 0 1 4.8 0v1.6"/></svg>
+        <span id="lock-txt"></span>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="sec-title">Your plan — tap a key to tune</div>
+      <div class="chips" id="chips"></div>
+
+      <div class="editor" id="editor">
+        <div class="ed-card">
+          <div class="ed-row">
+            <span class="ed-val" id="ed-val">$400K–$550K</span>
+            <span class="ed-cap">drag both ends</span>
+          </div>
+          <div class="dual" id="dual">
+            <div class="track"><div class="fill" id="fill"></div></div>
+            <input type="range" id="pmin" min="250000" max="1000000" step="25000" value="400000">
+            <input type="range" id="pmax" min="250000" max="1000000" step="25000" value="550000">
+          </div>
+        </div>
+      </div>
+
+      <div><span class="add" id="add">+ Add a must-have</span></div>
+      <div class="tray" id="tray"><div class="tray-inner" id="tray-inner"></div></div>
+
+      <div class="hint">Required <b>✦</b> narrows · nice-to-have <b>◇</b> only ranks — never hides a home</div>
+
+      <div class="preview">
+        <div class="prev-head"><span class="prev-dot"></span><span class="prev-title" id="r-title">Best matches</span></div>
+        <div class="mini">
+          <div class="mini-ph"></div>
+          <div>
+            <div class="mini-price">$640,000</div>
+            <div class="mini-addr">1246 4th · Loveland</div>
+            <div class="mini-ev">✓ Hot tub — “dedicated hot tub building…”</div>
+          </div>
+        </div>
+        <div class="mini">
+          <div class="mini-ph" style="background:linear-gradient(135deg,#A8C0A0,#6E8C66)"></div>
+          <div>
+            <div class="mini-price">$564,000</div>
+            <div class="mini-addr">3696 Downieville · Loveland</div>
+            <div class="mini-ev">✓ New roof — “brand new with warranty”</div>
+          </div>
+        </div>
+        <div class="more" id="rest">+ more that match</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="done-bar">
+    <button class="done-btn" id="done">See these homes</button>
+  </div>
+</div>
+
+<script>
+const RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
+const BASE = 5200, LO = 250000, HI = 1000000, GAP = 25000;
+const fmt = n => n.toLocaleString('en-US');
+const kfmt = n => n >= 1e6 ? '$' + (n/1e6).toFixed(n%1e6?1:0) + 'M' : '$' + Math.round(n/1000) + 'K';
+const cum = p => {
+  const P = [[250000,.05],[350000,.18],[450000,.37],[500000,.50],[600000,.68],[750000,.86],[1000000,1]];
+  if (p <= P[0][0]) return P[0][1]; if (p >= P[6][0]) return 1;
+  for (let i = 1; i < P.length; i++) {
+    if (p <= P[i][0]) { const [a,y0]=P[i-1],[b,y1]=P[i]; return y0+(y1-y0)*(p-a)/(b-a); }
+  }
+  return 1;
+};
+
+let plan = [
+  { id: 'city', label: 'Loveland', kind: 'gate', factor: .24, keep: true },
+  { id: 'price', kind: 'price', min: 400000, max: 550000 },
+  { id: 'beds', label: '3+ bed', kind: 'gate', factor: .72 },
+  { id: 'pool', label: 'Pool', kind: 'gem', factor: .26, required: true },
+];
+const SUGGEST = [
+  { id: 'price', label: 'Price range', kind: 'price', min: 350000, max: 600000 },
+  { id: 'beds', label: '3+ bed', kind: 'gate', factor: .72 },
+  { id: 'baths', label: '2+ bath', kind: 'gate', factor: .82 },
+  { id: 'basement', label: 'Finished basement', kind: 'gem', factor: .34 },
+  { id: 'roof', label: 'New roof', kind: 'gem', factor: .40 },
+  { id: 'garage', label: '3-car garage', kind: 'gate', factor: .34 },
+  { id: 'hottub', label: 'Hot tub', kind: 'gem', factor: .30 },
+  { id: 'laundry', label: 'Main-floor laundry', kind: 'gem', factor: .45 },
+];
+
+const priceCr = () => plan.find(c => c.id === 'price');
+const cityLabel = () => (plan.find(c => c.id === 'city') || {}).label;
+function priceLabel(cr) {
+  const lo = cr.min <= LO, hi = cr.max >= HI;
+  if (lo && hi) return 'Any price';
+  if (lo) return 'Up to ' + kfmt(cr.max);
+  if (hi) return kfmt(cr.min) + '+';
+  return kfmt(cr.min) + '–' + kfmt(cr.max);
+}
+function countOf() {
+  let c = BASE;
+  for (const cr of plan) {
+    if (cr.kind === 'price') c *= Math.max(.012, cum(cr.max) - cum(cr.min));
+    else if (cr.kind === 'gem') c *= cr.required ? cr.factor : 1;
+    else if (cr.factor) c *= cr.factor;
+  }
+  return Math.max(0, Math.round(c));
+}
+
+let shown = countOf();
+const $ = s => document.querySelector(s);
+const countEl = $('#count'), deltaEl = $('#delta'), lockEl = $('#lock'), lockTxt = $('#lock-txt');
+const editor = $('#editor'), edVal = $('#ed-val');
+
+function tween(el, from, to, cls) {
+  if (RM) { el.textContent = fmt(to); return; }
+  const dur = 680, st = performance.now(), ease = t => 1 - Math.pow(1 - t, 3);
+  el.classList.remove('tighten', 'loosen'); if (cls) el.classList.add(cls);
+  (function f(now) {
+    const t = Math.min(1, (now - st) / dur);
+    el.textContent = fmt(Math.round(from + (to - from) * ease(t)));
+    if (t < 1) requestAnimationFrame(f);
+    else { el.textContent = fmt(to); setTimeout(() => el.classList.remove('tighten', 'loosen'), 260); }
+  })(st);
+}
+function flashDelta(label, diff) {
+  const down = diff < 0;
+  deltaEl.className = 'delta ' + (down ? 'down' : 'up');
+  deltaEl.innerHTML = (down ? '▾ ' : '▴ ') + label + ' &nbsp;<span class="n">' + (down ? '−' : '+') + fmt(Math.abs(diff)) + '</span>';
+  void deltaEl.offsetWidth; deltaEl.classList.add('show');
+}
+function refreshLock() {
+  const cr = priceCr();
+  lockTxt.innerHTML = 'Strict — every home is <b>' + (cr ? priceLabel(cr) : 'any price') + '</b>, in <b>' + cityLabel() + '</b>';
+}
+function refreshResults() {
+  const gems = plan.filter(c => c.kind === 'gem' && c.required);
+  const confirmed = gems.length ? Math.max(1, Math.round(shown * .66)) : shown;
+  $('#r-title').textContent = gems.length ? 'Best matches · ' + confirmed + ' with the quote' : 'Matches';
+  $('#rest').textContent = '+ ' + fmt(Math.max(0, shown - 2)) + ' more that match';
+}
+function commit(label) {
+  const next = countOf(), diff = next - shown;
+  if (diff !== 0) { tween(countEl, shown, next, diff < 0 ? 'tighten' : 'loosen'); if (label) flashDelta(label, diff); }
+  shown = next; refreshLock(); refreshResults();
+}
+function liveUpdate() {
+  const next = countOf();
+  tween(countEl, shown, next, next < shown ? 'tighten' : 'loosen');
+  shown = next; refreshLock(); refreshResults();
+}
+
+const chipsEl = $('#chips');
+function chipMarkup(cr) {
+  if (cr.kind === 'price') return { cls: 'gate', mk: '', text: priceLabel(cr) };
+  if (cr.kind === 'gem') return cr.required
+    ? { cls: 'gem-req', mk: '✦', text: cr.label }
+    : { cls: 'gem-nice', mk: '◇', text: cr.label };
+  return { cls: 'gate', mk: '', text: cr.label };
+}
+function renderChips(newId) {
+  chipsEl.innerHTML = '';
+  for (const cr of plan) {
+    const m = chipMarkup(cr);
+    const el = document.createElement('div');
+    el.className = 'chip ' + m.cls + (cr.id === newId ? ' enter' : '');
+    el.innerHTML = (m.mk ? '<span class="mk">' + m.mk + '</span>' : '') + '<span>' + m.text + '</span>' + (cr.keep ? '' : '<span class="x" data-x="' + cr.id + '">×</span>');
+    el.addEventListener('click', e => {
+      if (e.target.dataset.x) { removeCr(cr.id); return; }
+      if (cr.kind === 'price') openEditor();
+      else if (cr.kind === 'gem') {
+        cr.required = !cr.required;
+        renderChips();
+        commit(cr.label + (cr.required ? ' — required' : ' — nice-to-have'));
+      }
+    });
+    chipsEl.appendChild(el);
+  }
+}
+function removeCr(id) {
+  const cr = plan.find(c => c.id === id); if (!cr || cr.keep) return;
+  if (cr.kind === 'price') editor.classList.remove('open');
+  plan = plan.filter(c => c.id !== id);
+  renderChips(); commit(cr.kind === 'price' ? priceLabel(cr) : cr.label); buildTray();
+}
+
+const pmin = $('#pmin'), pmax = $('#pmax'), fill = $('#fill');
+const pct = v => (v - LO) / (HI - LO) * 100;
+function syncFill() {
+  const cr = priceCr(); if (!cr) return;
+  fill.style.left = pct(cr.min) + '%'; fill.style.width = (pct(cr.max) - pct(cr.min)) + '%';
+}
+function openEditor() {
+  const cr = priceCr(); if (!cr) return;
+  pmin.value = cr.min; pmax.value = cr.max; syncFill();
+  editor.classList.toggle('open');
+}
+pmin.addEventListener('input', () => {
+  const cr = priceCr(); let v = +pmin.value;
+  if (v > cr.max - GAP) { v = cr.max - GAP; pmin.value = v; }
+  cr.min = v; edVal.textContent = priceLabel(cr); syncFill(); renderChips(); liveUpdate();
+});
+pmax.addEventListener('input', () => {
+  const cr = priceCr(); let v = +pmax.value;
+  if (v < cr.min + GAP) { v = cr.min + GAP; pmax.value = v; }
+  cr.max = v; edVal.textContent = priceLabel(cr); syncFill(); renderChips(); liveUpdate();
+});
+
+const add = $('#add'), tray = $('#tray'), trayInner = $('#tray-inner');
+add.addEventListener('click', () => {
+  tray.classList.toggle('open');
+  add.textContent = tray.classList.contains('open') ? 'Close' : '+ Add a must-have';
+});
+function buildTray() {
+  trayInner.innerHTML = '';
+  const inPlan = new Set(plan.map(c => c.id));
+  const avail = SUGGEST.filter(s => !inPlan.has(s.id));
+  if (!avail.length) {
+    trayInner.innerHTML = '<div style="font-family:var(--mono);font-size:11px;color:var(--mist-2)">Nothing left — tight search.</div>';
+    return;
+  }
+  for (const s of avail) {
+    const el = document.createElement('div');
+    el.className = 'sug';
+    el.innerHTML = '<span class="plus">+</span><span>' + s.label + '</span>' + (s.kind === 'gem' ? '<span class="gm">✦</span>' : '');
+    el.addEventListener('click', () => {
+      const cr = { ...s }; if (cr.kind === 'gem') cr.required = true;
+      plan.push(cr); renderChips(cr.id); commit(cr.kind === 'price' ? priceLabel(cr) : cr.label); buildTray();
+      if (cr.kind === 'price') { pmin.value = cr.min; pmax.value = cr.max; syncFill(); editor.classList.add('open'); }
+    });
+    trayInner.appendChild(el);
+  }
+}
+
+document.getElementById('done').onclick = () => {
+  document.getElementById('done').textContent = '✓ Applied — ' + fmt(shown) + ' homes';
+};
+
+countEl.textContent = fmt(shown);
+syncFill(); renderChips(); refreshLock(); refreshResults(); buildTray();
+</script>
+</body>
+</html>
